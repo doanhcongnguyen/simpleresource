@@ -1,3 +1,4 @@
+Simple resource for AA server
 
 - Model mapper: Mapstruct & Lombok
 - Rest Controller Advice: handle exception & http response code
@@ -5,3 +6,4 @@
 - Logback
 - Api documents: Swagger
 - CRUD with validation
+

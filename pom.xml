@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dcn</groupId>
-	<artifactId>aaserver</artifactId>
+	<artifactId>simpleresource</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>aaserver</name>
-	<description>Authentication - Authorization</description>
+	<name>Simple Resource</name>
+	<description>Simple resource with JWT Oauth2</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -31,6 +31,11 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
@@ -39,6 +44,32 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security.oauth</groupId>
+			<artifactId>spring-security-oauth2</artifactId>
+			<version>2.3.3.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-jwt</artifactId>
+			<version>1.0.9.RELEASE</version>
+		</dependency>
+
+		<!-- API, java.xml.bind module for JWT Oauth2 -->
+		<dependency>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
+			<version>2.3.2</version>
+		</dependency>
+
+		<!-- Runtime, com.sun.xml.bind module  for JWT Oauth2 -->
+		<dependency>
+			<groupId>org.glassfish.jaxb</groupId>
+			<artifactId>jaxb-runtime</artifactId>
+			<version>2.3.2</version>
 		</dependency>
 
 		<dependency>
@@ -93,6 +124,12 @@
 			<artifactId>springfox-swagger2</artifactId>
 			<version>2.9.2</version>
 			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-bean-validators</artifactId>
+			<version>2.9.2</version>
 		</dependency>
 
 		<dependency>
